@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
-import JaulaCard from '../components/JaulaCard';
 
 const Registro = () => {
   return (

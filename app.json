@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Timbre 2023",
+    "name": "Senior Watch",
     "slug": "Ona-App",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.unicor.timbre"
+      "package": "com.prodibb28.OnaApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
