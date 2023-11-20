@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text,StyleSheet, TextInput} from "react-native";
-import Icon from 'react-native-vector-icons/Ionicons';
+
 
 const Input = ({
     label,
@@ -24,7 +24,7 @@ const Input = ({
                         :"#8A8989"
                         },
                 ]}>
-                <Icon name = {iconName} style={style.icon}/>
+                
                 <TextInput 
                     secureTextEntry={hidePassword}
                     autoCorrect = {false}
@@ -38,14 +38,6 @@ const Input = ({
                     style={style.inpText}
                     {...props}
                 />
-                {password && (
-                     <Icon 
-                        onPress={() => setHidePassword(!hidePassword)}
-                        name= {hidePassword ? "eye-outline" : "eye-off-outline"} 
-                        style={style.iconShowPass}
-                     />
-                )}
-               
             </View>
             {error && (
                 <Text style = {style.labelError}>

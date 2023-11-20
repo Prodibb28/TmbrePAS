@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import React, {useState, useEffect} from 'react';
-import Icon from 'react-native-vector-icons/Ionicons';
+
 
 
 import Login from './src/screens/Login';
@@ -51,18 +51,6 @@ const Tab = createBottomTabNavigator();
         inactiveTintColor: 'gray',// Color del ícono y el texto cuando no está seleccionado
         tabBarStyle: { position: 'absolute',  height: 55},
         tabBarLabelStyle : { fontSize: 12, marginBottom:5 },  // Tamaño de la letra
-        tabBarIcon: ({ focused, color, size }) => {
-          let iconName;
-
-          if (route.name === 'Dashboard') {
-            iconName = focused ? 'people' : 'people-outline';
-          } else if (route.name === 'Registro') {
-            iconName = focused ? 'podium' : 'podium-outline';
-          }
-
-          // Puedes cambiar el tamaño de los iconos ajustando el valor de 'size'
-          return <Icon style={{marginTop:5,}} name={iconName} size={size} color={color} />;
-        },
       })}
 
       >
